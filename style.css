@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+/* for making items to display in same line */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+/* width is given to divide section equallly */
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center; /*for making vertically center*/
+}
+
+.nav-list li{
+    list-style: none;
+    text-transform: capitalize;
+    padding: 12px 32px;
+}
+
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover{
+    color: green;
+}
+
+.rightnav{
+    width: 30%;
+    justify-content: right; /*justify content: center is use for making content horizontally center*/
+    align-items: center;
+    display: flex;
+    padding: 10px 15px;
+    gap: 15px; /*provide equal space to every element*/
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo img{
+    width: 50%;
+    border: 5px solid white;
+}
+
+/*  for search button
+    font-size: 14px;
+    padding: 0 12px;
+    background: none;
+    border: 3px solid white;
+    color: white;
+    border-radius: 8px; */
+
+
+
+/* search bar */
+#search{
+    border-radius: 9px;
+    padding: 5px;
+    font: 17px;
+    border: 2px solid grey;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.4) url('../images/use.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+/* starting new section */
+.mainbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+/* for first-section */
+ .first-section{
+    height: 100vh;
+ }
+
+
+/* targeting 1st half */
+.firstHalf{
+    width: 65%;
+}
+
+/* targeting 2nd half */
+.secondHalf{
+    width: 35%;
+    padding: 10px 0;
+}
+.secondHalf img{
+    width: 60%;
+    border: 4px solid white;
+    display: block;
+    margin: auto;
+    border-bottom-left-radius: 50px;
+}
+
+.text-big{
+    font-size: 32px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.text-small{
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.btn{
+    padding: 5px 17px;
+    margin: 10px 0;
+    margin-right: 14px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 15px;
+    background: none;
+    color: white;
+}
+
+.btn-sm{
+    padding: 2px 12px;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+
+.btn:hover{
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;   
+}
+
+/* ********************** starting new section ******************************************************  */
+.section{
+    height: 300px;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.section img{ 
+    width: 20%;
+}
+
+.paras{
+    padding: 0 60px;
+}
+
+.left-section{
+    flex-direction: row-reverse;
+}
+.burger{
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 80%;
+    margin: auto;
+    height: 60vh;
+    margin-top: 1rem;
+}
+
+.contact h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.map{
+    padding: 10px 20px;
+    width: 100%;
+    height: 100vh;
+}
+
+iframe{
+    width: 100%;
+    height: 300px;
+}
+/* ********************** starting responsive( seting meda quory) ******************************************************  */
+@media only screen and (max-width: 1160px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .rightnav{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .btn{
+        margin-right: 0%;
+    }
+    #search{width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+}
